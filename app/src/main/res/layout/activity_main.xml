@@ -7,7 +7,47 @@
     tools:context=".MainActivity">
 
 
+    <Button
+        android:id="@+id/bt_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Bares"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/bt_tour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Turismo"
+        app:layout_constraintStart_toStartOf="@+id/bt_bar"
+        app:layout_constraintTop_toBottomOf="@+id/bt_bar" />
 
+    <Button
+        android:id="@+id/bt_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Restaurantes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_bar"
+        app:layout_constraintTop_toTopOf="@+id/bt_bar" />
 
+    <Button
+        android:id="@+id/bt_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Hóteis"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_tour"
+        app:layout_constraintStart_toStartOf="@+id/bt_rest"
+        app:layout_constraintTop_toBottomOf="@+id/bt_rest"
+        app:layout_constraintVertical_bias="1.0" />
 </android.support.constraint.ConstraintLayout>
